@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(255, 182, 213, 0.6), rgba(255, 182, 213, 0.6)), 
+                url('images/print.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ff66c9;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff99cc;
+    padding: 30px;
+    border-bottom: 10px solid #ff66b2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff3385;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.profile {
+    margin: 30px;
+    padding: 20px;
+    background-color: #e84697da;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff99cc;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 5px solid #ffebf0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collage {
+    margin: 30px;
+    padding: 20px;
+    background-color: #ffccf5;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff99cc;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.interest-item {
+    background-color: #ff99cc;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #ff66b2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interest-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover .interest-icon {
+    transform: scale(1.1);
+}
+
+.extra-content {
+    display: none;  /* Hide the content by default */
+    margin-top: 15px;
+    text-align: left;
+}
+
+.collage-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #ff3385;
+}
+
+footer a {
+    color: #ff66b2;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #ff66b2;
+    padding-bottom: 2px;
+}
+
+footer a:hover {
+    color: #ff3385;
+    border-bottom: 2px solid #ff3385;
+}
